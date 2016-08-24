@@ -32,6 +32,11 @@ class ResultSet
         @resultSet.getIntSync(column)
 
 
+    # Gets the given column's value as long
+    getLong: (column) ->
+        @resultSet.getLongSync(column)
+
+
     # Gets the given column's value as a string representation of a JDBC timestamp
     getTimestamp: (column) ->
         @resultSet.getTimestampSync(column)?.toString()
